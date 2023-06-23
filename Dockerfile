@@ -12,4 +12,4 @@ ADD . /app
 
 # Start the app
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0"]
