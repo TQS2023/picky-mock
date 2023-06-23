@@ -2,13 +2,13 @@ FROM python:3.10-alpine
 
 WORKDIR /app
 
-COPY api/requirements.txt /app
+COPY requirements.txt /app
 
 # Install dependencies
 RUN pip install -r requirements.txt
 
 # Copy source code
-ADD api /app
+ADD . /app
 
 # Start the app
 
