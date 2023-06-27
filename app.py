@@ -20,7 +20,7 @@ def get_pickup_points():
 
 @app.post("/api/package/new")
 def new_package(package: dict):
-    package["packageId"] = uuid.uuid4()
+    package["packageId"] = uuid.uuid4().__str__()
     packages.append(package)
 
     return {
